@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/5047001529.js" crossorigin="anonymous"></script>
+<title>Instagram Photo Feed</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+
+
+
+<!-- Header -->
+
+
+<nav class="navbar bg-light">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">
+<i class="fa-brands fa-instagram"></i>
+<span> Instagram</span>
+</a>
+<ul class="nav justify-content-end">
+<li class="nav-item align-self-center">
+<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Create new post
+</button>
+</li>
+<li class="nav-item ">
+<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+<i class="fa-solid fa-gear"></i>
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+<li class="dropdown-item" href="#">Profile</li>
+<li class="dropdown-item" href="#">Accessibility</li>
+<li class="dropdown-item" href="#">Privacy and data</li>
+<hr class="dropdown-divider">
+<li class="dropdown-item logout" href="#">Logout</li>
+</ul>
+</div>
+</li>
+</ul>
+<!-- Button trigger modal -->
+</div>
+</nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="mb-3">
+<label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Add the caption of your post here</textarea>
+</div>
+<button type="button" class="btn btn-outline-secondary">
+<i class="fa-solid fa-camera"></i>
+</button>
+<button type="button" class="btn btn-outline-secondary">
+<i class="fa-solid fa-location-dot"></i>
+</button>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<button type="button" class="btn btn-success">Publish</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Tab nav -->
+
+
+<ul class=" nav nav-tabs justify-content-center" id="myTab" role="tablist">
+<li class="nav-item" role="presentation">
+<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+<i class="fa-solid fa-table-cells"></i>
+</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+<i class="fa-solid fa-square"></i>
+
+
+</button>
+</li>
+
+
+</ul>
+<!-- Tab content -->
+
+
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+
+<div class="container-fluid">
+<div class="row g-2 insta-grid">
+<div class="col-12 col-md-4">
+<img src="dog.jpg" alt="dog"/>
+</div>
+<div class="col-12 col-md-4">
+<img src="team.jpg" alt="team"/>
+</div>
+<div class="col-12 col-md-4">
+<img src="croatia.jpg" alt="croatia"/>
+
+
+</div>
+<div class="col-12 col-md-4">
+<img src="smile women.jpg" alt="smiling woman"/>
+
+
+</div>
+<div class="col-12 col-md-4">
+<img src="eiffel.jpg" alt="eiffel tower"/>
+
+
+</div>
+<div class="col-12 col-md-4">
+<img src="code.jpg" alt="laptop with code" />
+
+
+</div>
+<div class="col-12 col-md-4">
+<img src="family.jpg" alt="family"/>
+
+
+</div>
+<div class="col-12 col-md-4">
+<img src="library.jpg" alt="library"/>
+</div>
+
+
+<div class="col-12 col-md-4">
+<img src="hiking.jpg" alt="hiking"/>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+<div class="container d-flex post-list">
+<div class="row">
+<div class="col-12">
+<div class="card mx-auto">
+<div class="card-header">
+<h5 class="card-title">My Crazy dog spark </h5>
+<p class="card-text card-number">08/26</p>
+</div>
+<img src="dog.jpg" class="card-img-top" alt="dog">
+<div class="card-body">
+<p><strong>204 likes</strong></p>
+<p class="card-text">This is an example of a very good photo that you can post on instagram.</p>
+</div>
+</div>
+
+
+<div class="card mx-auto">
+<div class="card-header">
+<h5 class="card-title">The greatness of croatia </h5>
+<p class="card-text card-number">04/09</p>
+</div>
+<img src="croatia.jpg" class="card-img-top" alt="croatia">
+<div class="card-body">
+<p><strong>26985 likes</strong></p>
+<p class="card-text">This is an example of a very good photo that you can post on instagram.</p>
+</div>
+</div>
+
+
+<div class="card mx-auto">
+<div class="card-header">
+<h5 class="card-title">My amazing team</h5>
+<p class="card-text card-number">06/10</p>
+</div>
+<img src="team.jpg" class="card-img-top" alt="team">
+<div class="card-body">
+<p><strong>204 likes</strong></p>
+<p class="card-text">This is an example of a very good photo that you can post on instagram.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
